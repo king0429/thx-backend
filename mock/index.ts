@@ -68,29 +68,29 @@ export const todayOrder = `  <table width="99%" height="40" border="0" cellspaci
 </tbody></table>`
 
 export const contact = `  <table width="99%" height="40" border="0" cellspacing="1" cellpadding="1" bgcolor="#d4d0c8">
-<tbody><tr bgcolor="#FFFFFF"> 
+<tr bgcolor="#FFFFFF"> 
   <td width="10%"><div class="Ttitle" align="center">日期</div></td>
-  <td width="8%"> <div class="Ttitle" align="center">来自</div></td>
-  <td width="24%"> <div class="Ttitle" align="center">送给</div> </td>
-  <td width="52%"> <div class="Ttitle" align="center">主题</div></td>
-  <td width="5%"> <div class="Ttitle" align="center">详细</div></td>
+  <td width="8%"><div class="Ttitle" align="center">来自</div></td>
+  <td width="24%"><div class="Ttitle" align="center">送给</div> </td>
+  <td width="52%"><div class="Ttitle" align="center">主题</div></td>
+  <td width="5%"><div class="Ttitle" align="center">详细</div></td>
 </tr>
 
-<tr onmouseover="trOver(this);" onmouseout="trOut(this);" bgcolor="#ffffff" style=""> 
+<tr> 
   <td><div align="center">2021/7/25</div></td>
   <td><div align="center">蒋琪</div></td>
-  <td> <div align="center">季总   行政部</div>
-  </td><td><div align="center">加班申请</div></td>
+  <td><div align="center">季总</div></td>
+  <td><div align="center">加班申请</div></td>
   <td><div align="center"><a href="lld/lldlist1.asp?id=2893">查看</a></div></td>
 </tr>
 
-<tr onmouseover="trOver(this);" onmouseout="trOut(this);" bgcolor="#ffffff" style=""> 
+<tr> 
   <td><div align="center">2021/7/24</div></td>
   <td><div align="center">行政欧阳</div></td>
-  <td> <div align="center">季总</div>
-  </td><td><div align="center">加班申请</div></td>
+  <td><div align="center">季总</div></td>
+  <td><div align="center">加班申请</div></td>
   <td><div align="center"><a href="lld/lldlist1.asp?id=2892">查看</a></div></td>
 </tr>
 
-</tbody></table>`
+</table>`
 

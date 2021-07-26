@@ -23,13 +23,16 @@ export default class Test extends Service {
     })
     return res
   }
-  getContact (tableStr) {
+  getContact (tableStr:string) {
+    console.log(tableStr)
     const $ = cherrio.load(tableStr)
     const _s = $('td')
     console.log('++++++++++++++++++++++++++++')
     const res:Array<Array<any>> = []
     Object.values(_s).map((val:any) => {
-      return val.children && val.children[0] ? val.children[0].data : val.data
+      if (!val.children || !val.children[0]) return false
+      if (!val.children[0].children) return val.children[0].data
+      return val.children[0]?.children[0]?.data
     }).filter(val => val !== false).forEach((val:any, index) => {
       if (index % 5 === 0) {
         res.push([val])
