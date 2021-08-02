@@ -37,7 +37,6 @@ export default class Test extends Service {
     console.log(tableStr)
     const $ = cherrio.load(tableStr)
     const _s = $('td')
-    console.log('++++++++++++++++++++++++++++')
     const res:Array<Array<any>> = []
     Object.values(_s).map((val:any) => {
       if (!val.children || !val.children[0]) return false
@@ -50,6 +49,14 @@ export default class Test extends Service {
         res[res.length - 1].push(val)
       }
     })
-    return res
+    const data = res.filter((_val: any, index: number) => index !== 0).map((val: Array<string>) => {
+      return {
+        date: val[0],
+        from: val[1],
+        to: val[2],
+        theme: val[3],
+      }
+    })
+    return { success: true, code: 0, data }
   }
 }
