@@ -4,7 +4,7 @@ import purchase from '../../mock/purchase';
 /**
  * Test Service
  */
-export default class Test extends Service {
+export default class Purchase extends Service {
   async list (): Promise<any> {
     const $:any = cherrio.load(purchase)
     const info:any = $('div')

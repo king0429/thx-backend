@@ -4,7 +4,7 @@ import warehouse from '../../mock/wartehouse';
 /**
  * Test Service
  */
-export default class Test extends Service {
+export default class Warehouse extends Service {
   async list (): Promise<any> {
     const $:any = cherrio.load(warehouse)
     const info:any = $('div')
